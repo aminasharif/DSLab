@@ -22,6 +22,26 @@
 	   printf("\n\nPOSTFIX EXPRESSION\n%s",postfix);
 	   return 0;
   }
+  void push(stack *s,char opr)
+{
+	s->top++;
+	s->a[s->top]=opr;
+}
+
+char pop(stack *s)
+{
+	if (s->top==-1)
+	{
+		printf("stack is empty\n");
+		return 0;
+    }
+    else
+    {
+		char data=s->a[s->top--];
+		return data;
+    }
+}
+Contact GitHub 
  void convert(char in[],char post[])
   {
 	   char opr;
