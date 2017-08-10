@@ -5,6 +5,7 @@ int queue[MAXSIZE], front=-1,rear=-1;
 
 int isfull()
 { //returns 1 if stack is full else -1
+	if((abs(rear-front))%(MAXSIZE-1)||(abs(front-rear))%MAXSIZE-1==0)
 	return rear==MAXSIZE-1;
 }
 
