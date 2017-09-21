@@ -127,10 +127,10 @@ int main()
 	insert(&root,6);
 	insert(&root,7);
 	traverse_inorder(root);
-	if(search_bst(root,8)==1)
+	if(search_bst(root,8)==1){
 	   printf("\nTHE NUMBER %d IS PRESENT IN THE TREE",8);
 	   else
 	   printf("\nNUMBER IS NOT FOUND");
-	  
+	  }
 	return 0;
 }
